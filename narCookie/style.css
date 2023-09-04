@@ -1,0 +1,613 @@
+/* -------------------------------------------------- */
+/* Çerez Politikası css kodları */
+
+.cerezPolitikasi {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: #f5f5f5;
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	align-items: center;
+	transition: bottom 0.3s ease;
+}
+
+.cerezPolitikasi.show {
+	bottom: 0px;
+}
+
+.cerez {
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.cerez button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin:3px;
+	cursor: pointer;
+	position: relative;
+	border: 2px solid;
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	height: 40px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.cerez a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+#cerezText{
+	background-color:yellow;
+}
+
+.cerezConfigure {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 500px;
+	height: 80%;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	z-index: 99999;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+	display: none;
+	max-height: 780px;
+	overflow: auto;
+}
+
+
+.configure h1 {
+	font-size: 21px;
+	font-weight: bold;
+	color: #000;
+	position: relative;
+	left: 1px;
+	top: 0px;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.configure h1 img {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 0px;
+	top: -4px;
+}
+
+#saveConfigure {
+	color: white;
+	border-radius: 5px;
+	width: 150px;
+	text-align: center;
+	position: relative;
+	left: 300px;
+	bottom: 5px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #007bff;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.categories {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+.category {
+	margin: 0 10px;
+	position: relative;
+	left: -82px;
+	bottom: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	color: rgb(120, 120, 120);
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+
+}
+
+.category.selected {
+	text-decoration: underline;
+	color: #9f0101;
+}
+
+.content h2 {
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	cursor: pointer;
+	
+}
+
+.content2 h2 {
+	font-size: 11.5px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	cursor: pointer;
+	
+}
+
+.custom-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-box h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+	color:black;
+}
+
+.custom-box p {
+    margin: 0 0 10px;
+	
+}
+
+.custom-box button {
+    background-color: #5076c7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-size: 14px;
+	margin-top: 4px;
+}
+
+.custom-box p1 {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+
+/* İşlevsel Çerez Butonu */
+.toggle {
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	bottom: -8px;
+	left: 420px;
+}
+
+.toggle input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.toggle input:checked+.slider {
+	background-color: #007bff;
+}
+
+.slider:before {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+
+.toggle input:checked+.slider:before {
+	transform: translateX(20px);
+}
+
+/* Performans ve Analiz Çerezleri Butonu */
+.toggle {
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	bottom: -8px;
+	left: 420px;
+}
+
+.toggle input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.toggle input:checked+.slider {
+	background-color: #007bff;
+}
+
+.slider:before {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+
+.toggle input:checked+.slider:before {
+	transform: translateX(20px);
+}
+
+/* Yukarı aşağı ok */
+.toggle-header {
+    display: flex;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    transition: transform 0.3s;
+    transform: rotate(0deg);
+}
+.opened .toggle-icon {
+    transform: rotate(90deg);
+}
+
+/* Media Query'ler */
+/* Masaüstü stil ayarları */
+@media (min-width: 992px) {
+    .cerezPolitikasi {
+         /* Masaüstü boyutları */
+		 height: 18.5%;
+		 width: 100%;
+		 padding: 10px;
+		 font-size: 17px;
+    }
+}
+
+/* Tablet stil ayarları */
+@media (max-width: 991px) and (min-width: 768px) {
+    .cerezPolitikasi {
+         /* Tablet boyutları */
+		 height: auto; /* Örneğin, yüksekliği artırabilirsiniz */
+		 width: 100%;
+		 padding: 25px;
+		 font-size: 40px;
+		 
+    }
+}
+
+/* Mobil stil ayarları */
+@media (max-width: 767px) {
+    .cerezPolitikasi {
+        /* Mobil boyutları */
+        height:auto; /* Örneğin, yüksekliği daha da artırabilirsiniz */
+		width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* Tablet stil ayarları */
+@media (max-width: 991px) and (min-width: 768px) {
+    .cerezConfigure {
+        width:100%; /* Tablet boyutlarına göre genişlik ayarı */
+        height:100%; /* Tablet boyutlarına göre yükseklik ayarı */
+        padding: 10px; /* İç boşluk ayarı */
+		max-height: 1290px;
+		overflow: auto;
+    }
+
+    .configure h1 {
+        font-size: 20px; /* Başlık yazı boyutu düşürüldü */
+        margin-bottom: 15px; /* Başlık alt boşluk ayarı */
+		position: relative;
+		left:8px;
+    }
+
+    .configure h1 img {
+        width: 20px; /* Başlık içindeki resim boyutu düşürüldü */
+        height: 20px;
+		
+    }
+
+    .categories {
+		position: relative;
+        margin: 5px 0; /* Kategori aralığı azaltıldı */
+		left:10px;
+		
+		
+    }
+
+    .category {
+		position: relative;
+        font-size: 16px; /* Kategori yazı boyutu düşürüldü */
+    }
+
+    .content h2 {
+        font-size: 18px; /* İçerik başlığı yazı boyutu düşürüldü */
+		position: relative;
+		left:17px;
+		bottom:10px;
+    }
+
+    .content2 h2 {
+        font-size: 13px; /* İçerik başlığı yazı boyutu düşürüldü */
+		position: relative;
+		left:17px;
+		bottom:5px;
+
+    }
+
+	#saveConfigure{
+		position: relative;
+		bottom:0px;
+		text-align: center;
+		align-items: center;
+		
+	}
+	
+
+    /* İçeriğin altındaki çerez seçeneklerinin düzeni */
+    .content .toggle-header,
+    .content2 .toggle-header {
+        flex-direction: column;
+    }
+
+    .toggle-icon {
+        transform: rotate(0deg);
+		position: relative;
+		top:28px;
+		left:-10px;
+    }
+	#policyContent2 .toggle-icon{
+		transform: rotate(0deg);
+		position: relative;
+		top:20px;
+		left:-10px;
+	}
+	.toggle
+	{
+		position: absolute;
+		left:420px;
+		
+		
+		
+	}
+
+    .opened .toggle-icon {
+        transform: rotate(360deg);
+    }
+
+	
+}
+
+/* Mobil stil ayarları */
+@media (max-width: 767px) and (min-width : 495px) {
+    .cerezConfigure {
+        width:100%; /* Mobil boyutlarına göre genişlik ayarı */
+        height:100%; /* Mobil boyutlarına göre yükseklik ayarı */
+        padding: 30px; /* İç boşluk ayarı */
+		max-height:780px;
+		overflow: auto;
+    }
+
+    .configure h1 {
+        font-size: 25px; /* Başlık yazı boyutu daha da düşürüldü */
+        margin-bottom: 10px; /* Başlık alt boşluk ayarı */
+		position: relative;
+		left: -3px;
+    }
+
+    .configure h1 img {
+        width: 25px; /* Başlık içindeki resim boyutu daha da düşürüldü */
+        height: 22px;
+		
+    }
+
+    .categories {
+        margin: 3px 0; /* Kategori aralığı daha da azaltıldı */
+		position: relative;
+		left:0px;
+    }
+
+    .category {
+        position: relative;
+        font-size: 14px; /* Kategori yazı boyutu daha da düşürüldü */
+    }
+
+    .content h2 {
+        font-size: 14px; /* İçerik başlığı yazı boyutu daha da düşürüldü */
+		position: relative;
+		left:7px;
+		bottom:6px;
+    }
+
+	.content p{
+		font-size: 15px;
+	}
+
+    .content2 h2 {
+        font-size: 15px; /* İçerik başlığı yazı boyutu daha da düşürüldü */
+		position: relative;
+		bottom:7px;
+    }
+
+	#saveConfigure{
+		position: relative;
+		left:300px;
+		top:10px;
+	}
+
+	.custom-box button{
+		font-size: 9px;
+	}
+
+	#policy1Button{
+		font-size: 13px;
+		position: relative;
+		left:8px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+    /* İçeriğin altındaki çerez seçeneklerinin düzeni */
+    .content .toggle-header,
+    .content2 .toggle-header {
+        flex-direction: column;	
+    }
+	.toggle{
+		position: absolute;
+		left:390px;
+
+	}
+
+    .toggle-icon {
+        transform: rotate(0deg);
+		position: relative;
+		left:-10px;
+		top:21px;
+    }
+
+    .opened .toggle-icon {
+        transform: rotate(360deg);
+		
+    }
+	
+	
+}
+
+
+@media(max-width:494px)
+{
+	.cerezConfigure {
+        width:100%; /* Mobil boyutlarına göre genişlik ayarı */
+        height:100%; /* Mobil boyutlarına göre yükseklik ayarı */
+        padding: 30px; /* İç boşluk ayarı */
+		max-height:1200px;
+		overflow: auto;
+    }
+
+    .configure h1 {
+        font-size: 25px; /* Başlık yazı boyutu daha da düşürüldü */
+        margin-bottom: 10px; /* Başlık alt boşluk ayarı */
+		position: relative;
+		left: -3px;
+    }
+
+    .configure h1 img {
+        width: 25px; /* Başlık içindeki resim boyutu daha da düşürüldü */
+        height: 22px;
+		
+    }
+
+    .categories {
+		position: relative;
+        margin: 3px 0; /* Kategori aralığı daha da azaltıldı */
+		left:50px;
+    }
+
+    .category {
+        position: relative;
+        font-size: 14px; /* Kategori yazı boyutu daha da düşürüldü */
+    }
+
+    .content h2 {
+        font-size: 14px; /* İçerik başlığı yazı boyutu daha da düşürüldü */
+		position: relative;
+		left:7px;
+		bottom:6px;
+    }
+
+	.content p{
+		font-size: 15px;
+	}
+
+    .content2 h2 {
+        font-size: 15px; /* İçerik başlığı yazı boyutu daha da düşürüldü */
+		position: relative;
+		bottom:7px;
+    }
+
+	#saveConfigure{
+		position: relative;
+		left:170px;
+		top:10px;
+	}
+
+	.custom-box button{
+		font-size: 9px;
+	}
+
+	#policy1Button{
+		font-size: 13px;
+		position: relative;
+		left:8px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+    /* İçeriğin altındaki çerez seçeneklerinin düzeni */
+    .content .toggle-header,
+    .content2 .toggle-header {
+        flex-direction: column;	
+    }
+	.toggle{
+		position: absolute;
+		left:270px;
+
+	}
+
+    .toggle-icon {
+        transform: rotate(0deg);
+		position: relative;
+		left:-10px;
+		top:21px;
+    }
+
+    .opened .toggle-icon {
+        transform: rotate(360deg);
+		
+    }
+	
+	
+}
+/* -------------------------------------------------- */
